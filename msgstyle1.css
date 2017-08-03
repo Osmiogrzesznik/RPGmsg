@@ -1,0 +1,230 @@
+
+
+
+ @font-face { font-family:FontAwesome ; src: url('http://www.produccio.x10host.com/FontAwesome.ttf'); } 
+
+
+	html {
+        margin:0;
+        padding:0;
+	}
+	body {
+		margin: 0px;
+        margin-bottom:120px;
+		padding: 0px;
+		font-family: FontAwesome,Helvetica, Arial, Sans-serif;
+		font-size: 14px;
+          background-color:#777;
+          transition: all 0.2 ease-in-out;
+	}
+	.msg-container {
+		width: 100%;
+		height: 100%;
+        margin-bottom:120px;
+	}
+	.header {
+		width: 100%;
+		height: 200px;
+		text-align: center;
+		padding: 15px 0px 5px;
+		font-size: 20px;
+		font-weight: normal;
+          background-color:#777;
+	}
+	.msg-area {
+		height: calc(100% - 102px);
+		width: 100%;
+		background-color:#777;
+		overflow-y: scroll;
+	}
+
+	.msginput {
+          justify-content:space-around;
+		padding: 5px;
+		font-size: 14px;
+		width:95%;
+		outline: none;
+          border:none;
+          margin:0px;
+	}
+
+.inputfield{
+          margin:5px;
+		padding: 5px;
+		font-size: 14px;
+		outline: none;
+          border:1px black;
+          flex-shrink:.5;
+          flex-basis:60%;
+          flex-grow:1;      
+}
+
+.bottom{
+		width: 100%;
+          padding:20px auto;
+		z-index: 1000;
+		position: fixed;
+		bottom: 0px ;
+		border-top: 1px solid #CCC;
+		background-color: #aaa;
+}
+
+.menu{
+    display:flex;
+padding: 5px;
+		width: 100%;
+		border: 2px solid #000;
+		background-color: #888;
+		position: relative;
+        top:0px;
+		z-index: 900;
+justify-content:space-between;
+}
+   
+
+.flxrow{
+display:flex;
+flex-direction:row;
+align-items:center;
+}
+
+.colrev{
+padding:4px;
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+}
+
+	
+	#whitebg {
+		width: 100%;
+		height: 10000%;
+		background-color: #000;
+		overflow-y: scroll;
+		opacity: 0.6;
+		display: none;
+		position: absolute;
+		top: 0px;
+		z-index: 1000;
+	}
+
+	#loginbox {
+          display:flex;
+          flex-direction:column-reverse;
+          justify-content:flex-start;
+          text-align:center;
+		width: 100%;
+          padding:2em;
+		border: 1px solid #AAA;
+		background-color: #CCC;
+		position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+		z-index: 1001;
+	}
+
+	h1 {
+		padding: 0px;
+		margin: 20px 0px 0px 0px;
+		text-align: center;
+		font-weight: normal;
+	}
+
+	button {
+		background-color: #43ACEC;
+		border: none;
+          border-radius:5px;
+		color: #FFF;
+          margin: 0px auto;
+		font-size: 16px;
+	}
+
+     .rnd{
+     border-radius:5px;
+     padding:5px;
+     background-color: #4344ac;
+     }
+
+     .sml{
+     font-size: 20px;
+     font-family: FontAwesome;
+     margin: 0px ;
+     align-self:center;
+     padding:5px;
+     text-align:center;
+     }
+
+	.buttonp {
+		width: 150px;
+		margin: 0px auto;
+        
+		
+	}
+	.msg {
+		margin: 15px 10px;
+		background-color: #f1f0f0;
+		max-width: calc(100% - 20px);
+		color: #000;
+		padding: 10px;
+		font-size: 14px;
+         border-radius:10px;
+         word-break:normal;
+         word-wrap:break-word;
+         text-align:left;
+         position:relative;
+         float:left;
+	}
+
+
+	.msgfrom {
+        float:right;
+        max-width: calc(100% - 20px);
+		background-color: #0084ff;
+		color: #FFF;
+		//margin: 10px 10px ;
+        text-align:right;
+	}
+	.msg::after {
+        content:"";
+        display:block;
+        position:absolute;
+		width: 0;
+		height: 0;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 8px solid #f1f0f0;
+		transform: rotate(315deg);
+		margin: 8px 0px 0px 5px;
+        
+	}
+	.msgfrom::after {
+        content:"";
+        display:block;
+        position:absolute;
+		border-bottom: 8px solid #0084ff;
+        transform: rotate(45deg);
+		//float: right;
+        right:15px
+	
+	}
+	.msgsentby {
+		color: #ffffff;
+		font-size: 12px;
+		margin: -5px 0px 0px 1px;
+	}
+	.msgsentbyfrom {
+		position:absolute;
+        right:0px;
+		margin: -5px 20px 0px ;
+	}
+    input{
+    margin:0;
+    }
+   
+
+    .MGstory{
+    color:black;
+    margin:10px 10px;
+    background-color: #777777;
+    }
